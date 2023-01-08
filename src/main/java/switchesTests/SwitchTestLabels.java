@@ -1,3 +1,5 @@
+package switchesTests;
+
 import java.time.LocalDate;
 
 import static java.time.DayOfWeek.*;

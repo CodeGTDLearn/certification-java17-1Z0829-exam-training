@@ -1,3 +1,5 @@
+package switchesTests;
+
 public class SwitchScopeTest {
   public static void main(String[] args) {
 

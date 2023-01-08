@@ -1,3 +1,5 @@
+package forLoopTests;
+
 public class ForTernaryTests {
   public static void main(String args[]) {
 

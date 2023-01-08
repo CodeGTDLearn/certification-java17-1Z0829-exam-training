@@ -1,3 +1,5 @@
+package forLoopTests;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,24 +10,24 @@ interface Birdie {
 class Dino implements Birdie {
   public void fly() {
 
-    System.out.println("Dino flies");
+    System.out.println("forLoopTests.Dino flies");
   }
 
   public void eat() {
 
-    System.out.println("Dino eats");
+    System.out.println("forLoopTests.Dino eats");
   }
 }
 
 class Bino extends Dino {
   public void fly() {
 
-    System.out.println("Bino flies");
+    System.out.println("forLoopTests.Bino flies");
   }
 
   public void eat() {
 
-    System.out.println("Bino eats");
+    System.out.println("forLoopTests.Bino eats");
   }
 }
 

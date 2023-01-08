@@ -1,3 +1,5 @@
+package forLoopTests;
+
 public class ForTests {
 
   private static void show(String text) {
