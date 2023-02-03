@@ -1,3 +1,5 @@
+package cast;
+
 public class CastTest {
   public static void main(String[] args) {
     byte by = 10;

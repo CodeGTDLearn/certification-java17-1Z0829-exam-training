@@ -1,3 +1,5 @@
+package cast;
+
 interface Flyer {
   String getName();
 }
@@ -26,7 +28,7 @@ class Eagle extends Bird {
 public class TestCastingClass {
   public static void main(String[] args) throws Exception {
 
-    Flyer f = new Eagle("American Bald Eagle");
+    Flyer f = new Eagle("American Bald cast.Eagle");
 
     System.out.println(f.getName());
     System.out.println(((Eagle)f).name);
