@@ -24,11 +24,11 @@ class ZCBond extends Bond {
     reset();
   }
 
-  public void reset() {
-
-    super.reset();
-    System.out.println("In ZCBond");
-  }
+//  public void reset() {
+//
+//    super.reset();
+//    System.out.println("In ZCBond");
+//  }
 
   public static void main(String args[]) {
 

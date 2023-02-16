@@ -1,3 +1,5 @@
+package exception;
+
 public class ExceptionTests {
 
   public static void main(String[] args) {
