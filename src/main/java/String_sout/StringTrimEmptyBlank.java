@@ -1,3 +1,5 @@
+package String_sout;
+
 public class StringTrimEmptyBlank {
     public static void main(String args[]) {
       String myText = "xx";
