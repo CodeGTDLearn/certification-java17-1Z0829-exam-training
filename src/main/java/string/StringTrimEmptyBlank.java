@@ -1,4 +1,4 @@
-package String_sout;
+package string;
 
 public class StringTrimEmptyBlank {
     public static void main(String args[]) {
