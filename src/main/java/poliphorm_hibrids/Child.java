@@ -1,4 +1,4 @@
-package poliphormism;
+package poliphorm_hibrids;
 
 public class Child extends Father {
   public String shadowInstanceVar = "Shadow Child InstanceVar";

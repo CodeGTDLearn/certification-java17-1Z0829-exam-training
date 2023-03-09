@@ -1,4 +1,4 @@
-package poliphormism.hibrid;
+package poliphorm_hibrids.hibrid;
 
 interface emptyInterface {
 }
@@ -10,7 +10,7 @@ class Father implements emptyInterface {
 
   public String toString() {
 
-    return "in FatherClass";
+    return "toString -> in FatherClass";
   }
 
   public String fatherInstanceMethod() {
@@ -35,7 +35,7 @@ class Child extends Father {
 
   public String toString() {
 
-    return "in ChildClass";
+    return "toString -> in ChildClass";
   }
 
   public String childInstanceMethod() {
@@ -51,6 +51,7 @@ class Child extends Father {
 }
 
 
+
 public class HibridObjects {
 
   public static void main(String[] args) {
@@ -58,10 +59,12 @@ public class HibridObjects {
     // 1) Empty-Interface NO access to nothing
     emptyInterface emptyInt = new Child();
 
+
     // 2) Casting to FatherClass - access to father Elements
     final String var1 = ((Father) emptyInt).fatherInstanceVariable;
     final String var2 = ((Father) emptyInt).fatherInstanceMethod();
     final String var3 = ((Father) emptyInt).toString();
+
 
     // 3) Casting to ChildClass - access to Child Elements
     final String var4 = ((Child) emptyInt).fatherInstanceMethod();
@@ -74,6 +77,7 @@ public class HibridObjects {
     // 4) Hibrid Object
     Father hibrid = new Child();
     Object hibridObject = new Child();
+
 
     final String myPanel = """
          1) Hibrid: %s
@@ -88,17 +92,9 @@ public class HibridObjects {
                        hibrid.fatherInstanceVariable,
                        hibrid.fatherInstanceMethod(),
                        hibrid.overridingCommonMethod(),
-                       ((Child)hibrid).overridingCommonMethod(),
+                       ((Child) hibrid).overridingCommonMethod(),
                        hibridObject.toString()
     );
-
     System.out.println(myPanel);
-
-    Father father = new Father();
-    Child son = new Child();
-    // son = (ChildClass) father; // Runtime error
-    father = son;
-    father = (Father) son;
-
   }
 }

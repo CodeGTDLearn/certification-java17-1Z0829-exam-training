@@ -1,4 +1,4 @@
-package poliphormism.injected;
+package poliphorm_hibrids.injected;
 
 interface emptyInterface {
 }
