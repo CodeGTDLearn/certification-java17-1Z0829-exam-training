@@ -15,6 +15,6 @@ public class For_conditional_2 {
     {
       sum = sum + i + j;   // "compile" BUt UNREACHABLE
     }
-    System.out.println("Sum = " + sum);
+    System.out.println("myBool = " + sum);
   }
 }
