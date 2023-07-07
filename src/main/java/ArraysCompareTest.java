@@ -38,16 +38,36 @@ public class ArraysCompareTest {
 
 
 /*
-    4) ARRAYS DE STRING
+    4) ARRAYS DE STRING / CHAR
     4.1) FIND O 'MISMATCH'
     4.2) LEXICOGRAFIA
     * 1° letra 'DIFERENTE' DO 'MISMATCH', no "s1",  for MAIOR:
       *  subtracao entre as letras, usando incl+excl - ADICIONA SINAL POSITIVO
     * 1° letra 'DIFERENTE' DO 'MISMATCH', no "s2",  for MAIOR:
       *  subtracao entre as letras, usando incl+excl - ADICIONA SINAL NEGATIVO*/
-    String[] s1 = new String[]{"a", "aac", "cc"};
-    String[] s2 = new String[]{"a", "aed", "cc", "DD"};
-    System.out.println(Arrays.compare(s1, s2));
+    String[] s1 = new String[]{"a", "aac", "cc", "XX", "e"};
+    String[] s2 = new String[]{"a", "aed", "cc", "DD", "e", "f"};
+    System.out.println("1) ARRAYS DE STRING: " + Arrays.compare(s1, s2));
+
+    String[] s11 = new String[]{"a", "b",  "acc", "cc"};
+    String[] s22 = new String[]{"a", "b",  "aed", "cc", "DD"};
+    System.out.println("2) ARRAYS DE STRING: " + Arrays.compare(s11, s22));
+
+    Character[] c1 = new Character[]{'a', 'a', 'c', 'X', 'e'};
+    Character[] c2 = new Character[]{'a', 'b', 'c', 'D', 'e', 'f'};
+    System.out.println("1) ARRAYS DE CHAR: " + Arrays.compare(c1, c2));
+
+    Character[] c11 = new Character[]{'a', 'b',  'a', 'c'};
+    Character[] c22 = new Character[]{'a', 'b',  'a', 'c', 'D'};
+    System.out.println("2) ARRAYS DE CHAR: " + Arrays.compare(c11, c22));
+
+    Character[] c122 = new Character[]{};
+    Character[] c222 = new Character[]{'a', 'b',  'a', 'c', 'D'};
+    System.out.println("3) ARRAYS DE CHAR: " + Arrays.compare(c122, c222));
+
+    Character[] c1222 = new Character[]{'a', 'b',  'a', 'c', 'D'};
+    Character[] c2222 = new Character[]{};
+    System.out.println("4) ARRAYS DE CHAR: " + Arrays.compare(c1222, c2222));
 
   }
 }
