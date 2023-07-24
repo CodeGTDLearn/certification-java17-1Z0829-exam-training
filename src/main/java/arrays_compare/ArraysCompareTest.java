@@ -1,3 +1,5 @@
+package arrays_compare;
+
 import java.util.Arrays;
 
 public class ArraysCompareTest {
@@ -35,6 +37,28 @@ public class ArraysCompareTest {
     System.out.println(
          "UM ARRAY E' \"DIFERENTE\" DO \"RADICAL DOUTRO\" + LENGHT DIFERENTE: " +
          Arrays.compare(ia111, ia222));
+
+
+ /*
+    4) UM DOS ARRAY'S E' "VAZIO"
+    4.1) SUBTRAIR OS ARRAYS-LENGHT's*/
+    char[] ia1111 = {'h', 'e', 'l', 'l'};
+    char[] ia2222 = {};
+    System.out.println(
+         "UM DOS ARRAYS E' \"VAZIO: " +
+         Arrays.compare(ia1111, ia2222));
+
+    int[] ia11111 = {1,2,3};
+    int[] ia22222 = {};
+    System.out.println(
+         "UM DOS ARRAYS E' \"VAZIO - int: " +
+         Arrays.compare(ia1111, ia2222));
+
+    String[] ia111111 = {"h", "e", "l", "l"};
+    String[] ia222222 = {null};
+    System.out.println(
+         "UM DOS ARRAYS E' \"VAZIO: " +
+         Arrays.compare(ia111111, ia222222));
 
 
 /*
